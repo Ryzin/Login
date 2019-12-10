@@ -1,25 +1,21 @@
-# 拨打电话和发送短信demo
+# 登录demo
 ## Mobile Application and Development (Android) 移动智能应用开发课程作业
 ### 简介
-* 该计算器是基于 Android Studio 开发，仿 One UI 设计风格的拨打电话和发
-送短信 APP。 
-* 该计算器的设计方面与 One UI 基本相同，采用扁平化风格。主界面
-activity_main.xml 中放置了 ViewPager 控件，而 ViewPager 可左右滑动切换不
-同的 fragment。activity_message.xml 放置了 RecycleView 控件，可以上下滑
-动查看短信内容。控件也大多采用圆角。 
-* 该 APP 实现了动态获取电话、短信权限功能。也可以直接进行电话拨打、发
-送短信，短信内容存放在数据库当中，而且可以从数据库中读取，并在 APP 中显
-示（但没有实现：数据库建立用户表，也就是说电话和短信没有一一对应）。并
-且对短信发送状态 sentIntent 和接收状态 deliveryIntent 进行了处理。 
-* 编程方面，MainActivity 中编写了整个 APP 通用的权限申请方法，供所有
-Activity 或 Fragment 调用。在电话 Fragment 中依旧使用抽象工厂模式绑定控
-件监听方法。在 MessageActivity 中尝试使用 butterknife，使用了更加简洁的
-控件绑定方法。数据库使用了 greendao，实现了表创建，可以对（短信）记录
-进行插入、查询等。 
+* 该计算器是基于 Android Studio 开发，仿 One UI 设计风格的，登录界面实现和 UI 测试APP。 
+* 该登录界面是基于 Android Studio 开发。 
+* 该登录界面的设计方面，采用扁平化风格，动效也尽可能参照 Material 
+Design 风格，配色方面采用浅色调。与上一次不同的是，所有的按钮都用了自
+带的水波纹效果，而不用在 drawble 为按钮创建单独的 selector 来显示按钮按
+下的效果。 
+* 同时，为登录完成了双语界面、简单的输入的安全检查和错误尝试功能。另
+外还加了一个超链接跳转的功能。在登录按钮点击后，会有 ProgressBar 提示加
+载登录。 
+* UI 测试方面，完成了对点击行为、输入行为、视图是否正确出现、按钮的可
+用状态等进行了测试。 
  
 <br/>
 <br/>
 
 ### 展示
-![pic1](https://github.com/Ryzin/PhoneAndMessage/raw/master/imgs/pic1.jpg)
-![pic2](https://github.com/Ryzin/PhoneAndMessage/raw/master/imgs/pic2.jpg)
+![pic1](https://github.com/Ryzin/Login/raw/master/imgs/pic1.jpg)
+![pic2](https://github.com/Ryzin/Login/raw/master/imgs/pic2.jpg)
