@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--亮色状态栏，则会使用黑色图标-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="TextInputLayout_login">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <!--<item name="counterEnabled">true</item>-->
+        <!--<item name="counterMaxLength">20</item>-->
+        <item name="errorEnabled">true</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="EditText_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/edit_text_login</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="hintTextAppearance">@style/hintText_login</item>
+    </style>
+
+    <style name="hintText_login" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="login_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+
+    <style name="login_dialog_pop_up_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_pop_up_anim</item>
+        <!--对话框进入动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_push_back_anim</item>
+    </style>
+
+    <style name="quick_login_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
